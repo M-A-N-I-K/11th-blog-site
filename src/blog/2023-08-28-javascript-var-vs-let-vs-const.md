@@ -7,7 +7,7 @@ author: Manik Dingra
 date: 2023-08-28T19:31:10.108Z
 tags:
   - post
-image: /assets/images/js-logo.png
+image: https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80
 imageAlt: var vs let vs const
 ---
 The keywords var, let, and const are used to declare variables in JavaScript. They all have their own unique properties and should be used in different situations. \
