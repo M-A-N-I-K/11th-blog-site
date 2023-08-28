@@ -61,13 +61,13 @@ layout : "base.njk"
                     <a href="#">{{title}}</a>
                 </h2>
                 <p>
-                    Lorem ipsum dolor amet nullam consequat etiam feugiat
+                    {{description}}
                 </p>
             </div>
             <div class="meta">
-                <time class="published" datetime="2015-11-01">November 1, 2015</time>
+                <time class="published" datetime="2015-11-01">{{date | postDate}}</time>
                 <a href="#" class="author">
-                    <span class="name">Jane Doe</span><img src="images/avatar.jpg" alt=""/></a>
+                    <span class="name">{{author}}</span><img src="images/avatar.jpg" alt=""/></a>
             </div>
         </header>
         <span class="image featured"><img src="{{image}}" alt="{{imageAlt}}"/>
@@ -119,9 +119,4 @@ layout : "base.njk"
             </a>
         </li>
     </ul>
-    <p class="copyright">
-        &copy; Untitled. Design:
-        <a href="http://html5up.net">HTML5 UP</a>. Images:
-        <a href="http://unsplash.com">Unsplash</a>.
-    </p>
 </section>
