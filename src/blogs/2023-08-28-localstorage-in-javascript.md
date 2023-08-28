@@ -9,7 +9,7 @@ author: Manik Dingra
 date: 2023-08-28T20:18:12.352Z
 tags:
   - post
-image: /assets/images/pexels-markus-spiske-4439901.jpg
+image: /assets/images/pexels-rodrigo-santos-3888151.jpg
 imageAlt: Coding Image
 ---
 LocalStorage is a property that allows JavaScript sites and apps to save key-value pairs in a web browser with no expiration date. This means the data stored persists even after the user closes the browser or restarts the computer.
