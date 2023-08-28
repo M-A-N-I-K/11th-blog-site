@@ -39,7 +39,6 @@ promise.then((result) => {
   console.log(error);
 });
 ```
-Use code with caution. Learn more
 
 This code creates a new Promise object and then calls the then() method on the Promise object. The success callback is called when the task completes successfully. The failure callback is called when the task fails.
 
