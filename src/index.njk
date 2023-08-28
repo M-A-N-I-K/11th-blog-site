@@ -1,0 +1,108 @@
+---
+title : 11ty | Blog | Home
+layout: base.njk
+---
+
+<!-- Menu -->
+<section
+    id="menu">
+    <!-- Search -->
+    <section>
+        <form class="search" method="get" action="#">
+            <input type="text" name="query" placeholder="Search"/>
+        </form>
+    </section>
+    <!-- Links -->
+    <section>
+        <ul class="links">
+            <li>
+                <a href="#">
+                    <h3>Lorem ipsum</h3>
+                    <p>Feugiat tempus veroeros dolor</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Dolor sit amet</h3>
+                    <p>Sed vitae justo condimentum</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Feugiat veroeros</h3>
+                    <p>Phasellus sed ultricies mi congue</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Etiam sed consequat</h3>
+                    <p>Porta lectus amet ultricies</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- Actions -->
+    <section>
+        <ul class="actions stacked">
+            <li>
+                <a href="#" class="button large fit">Log In</a>
+            </li>
+        </ul>
+    </section>
+</section>
+<!-- Main -->
+<div
+    id="main">
+    <!-- Post -->
+    {%- for post in collections.post | reverse -%}
+        <article class="post">
+            <header>
+                <div class="title">
+                    <h2>
+                        <a href="{{ post.url }}">{{ post.data.title }}</a>
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor amet nullam consequat etiam feugiat
+                    </p>
+                </div>
+                <div class="meta">
+                    <time class="published" datetime="2015-11-01">{{ post.data.date | postDate }}</time>
+                    <a href="#" class="author">
+                        <span class="name">{{ post.data.author }}</span><img src="assets/images/avatar.jpg" alt=""/></a>
+                </div>
+            </header>
+            <a href="{{ post.url }}" class="image featured"><img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}"/>
+            </a>
+            <p>
+                {{ post.data.description }}
+            </p>
+            <footer>
+                <ul class="actions">
+                    <li>
+                        <a href="{{ post.url }}" class="button large">Continue Reading</a>
+                    </li>
+                </ul>
+                <ul class="stats">
+                    <li>
+                        <a href="#">General</a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon solid fa-heart">28</a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon solid fa-comment">128</a>
+                    </li>
+                </ul>
+            </footer>
+        </article>
+    {%- endfor -%}
+    <!-- Pagination -->
+    <ul class="actions pagination">
+        <li>
+            <a href="" class="disabled button large previous">Previous Page</a>
+        </li>
+        <li>
+            <a href="#" class="button large next">Next Page</a>
+        </li>
+    </ul>
+</div>
